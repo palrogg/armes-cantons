@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.material.min.css"/>
+
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 1em;
+    max-width: 580px;
+    padding: 2px;
+
+  }
+  .mdl-data-table td, .mdl-data-table tbody tr{
+    height: auto !important;
+  }
+
+  @media only screen and (max-width: 700px){
+    .table td, .table th{
+      font-size: .9em;
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+    }
+    .table td{
+      padding: 0.25rem;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <h3>Taux estimé d’armes à feu en mains privées</h3>
+    <p>Pays et territoires, 2017 (armes à feu pour 100 résidents)</p>
+
+    <table id="dt_list" class="mdl-data-table table responsive table-striped table-bordered" style="width: 100%">
+      <thead>
+        <tr>
+          <th class="all">Pays</th>
+          <th class="all weapons">Armes par 100 résidents</th>
+        </tr>
+      </thead>
+    </table>
+
+    <p>Source: Small Arms Survey, <a href="http://www.smallarmssurvey.org/fileadmin/docs/T-Briefing-Papers/SAS-BP-Civilian-Firearms-Numbers.pdf" target="_blank">Estimating global civilian-held firearms numbers</a></p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pym/1.3.2/pym.v1.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/dataTables.material.min.js"></script>
+  <script>
+  $(document).ready(function() {
+
+    var pymChild = new pym.Child();
+
+    $('#dt_list').DataTable( {
+      "ajax": "data/small-arms.json",
+      "responsive": true,
+      "pageLength": 30,
+      "dom": "tr",
+      "ordering": false,
+      columnDefs: [
+                  {
+                      targets: [ 0, 1 ],
+                      className: 'mdl-data-table__cell--non-numeric'
+                  },
+              ],
+      "drawCallback": function(){
+        pymChild.sendHeight();
+      },
+      "initComplete": function(){
+        pymChild.sendHeight();
+      },
+      "language": {
+        "thousands": "'",
+        "sProcessing":     "Traitement en cours...",
+        "sSearch":         "Rechercher&nbsp;:",
+        "sLengthMenu":     "Afficher _MENU_ &eacute;l&eacute;ments",
+        "sInfo":           "Signatures _START_ &agrave; _END_ sur _TOTAL_",
+        "sInfoEmpty":      "Aucun résultat",
+        "sInfoFiltered":   "(sur _MAX_ signataires)",
+        "sInfoPostFix":    "",
+        "sLoadingRecords": "Chargement en cours...",
+        "sZeroRecords":    "Aucun &eacute;l&eacute;ment &agrave; afficher",
+        "sEmptyTable":     "Aucune donn&eacute;e disponible dans le tableau",
+        "oPaginate": {
+          "sFirst":      "Premier",
+          "sPrevious":   "Pr&eacute;c&eacute;dent",
+          "sNext":       "Suivant",
+          "sLast":       "Dernier"
+        },
+        "oAria": {
+          "sSortAscending":  ": activer pour trier la colonne par ordre croissant",
+          "sSortDescending": ": activer pour trier la colonne par ordre d&eacute;croissant"
+        },
+        "select": {
+          "rows": {
+            _: "%d lignes séléctionnées",
+            0: "Aucune ligne séléctionnée",
+            1: "1 ligne sélectionnée"
+          }
+        }
+      }
+    } );
+
+  } );
+</script>
+</body>
+</html>
