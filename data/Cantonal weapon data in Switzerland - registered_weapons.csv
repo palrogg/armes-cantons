@@ -1,0 +1,35 @@
+id,canton_fr,registered firearms,registered firearms estimations,registered firearm owners,weapons per owner,note,population 2018 (est.),registered weapon per 100 capita,did_answer,no_data,name,date_count,id_check,E-mail
+AR,Appenzell Rhodes-Extérieures,7169,,,,(1),55178,"12,99",1,,Polizeikommando Appenzell Ausserrhoden,avril 2019,AR,medien.kapo@ar.ch
+AI,Appenzell Rhodes-Intérieures,2086,,588,"3,5",(1),16105,"12,95",1,,Polizeikommando Appenzell Innerrhoden,,AI,"michaela.inauen@rk.ai.ch, roland.koster@kapo.ai.ch"
+AG,Argovie,70000,,,,(3),670988,"10,43",1,,Polizeikommando Aargau Fachstelle SIWAS,,AG,info@kapo.ag.ch
+BL,Bâle-Campagne,27500,,,,(2),287023,"9,58",1,,Polizei Basel-Landschaft Rheinstrasse 25,fin 2018,BL,pol.kommunikation@bl.ch 
+BS,Bâle-Ville,36000,,,,(3),193908,"18,57",1,,Kantonspolizei Basel-Stadt Unterer Rheinweg 24,avril 2019,BS,medien@jsd.bs.ch
+BE,Berne,,146124,,,(4),1031126,"0,00",1,1,Kantonspolizei Bern,,BE,medienstelle@police.be.ch
+FR,Fribourg,37000,,,,(3),315074,"11,74",1,,Kantonspolizei Freiburg Postfach 160,,FR,communication.police@fr.ch
+GE,Genève,104389,,35103,"3,0",(1),495249,"21,08",1,,"Police cantonale Service des Armes, Explosifs",avril 2019,GE,servicedepresse@police.ge.ch
+GL,Glaris,8470,,,,(1),40349,"20,99",1,,Kantonspolizei Glarus Spielhof 12,avril 2019,GL,kantonspolizei@gl.ch
+GR,Grisons,33096,,10228,"3,2",(1),197888,"16,72",1,,Kantonspolizei Graubünden Ringstrasse 2,,GR,info@kapo.gr.ch
+JU,Jura,11704,,,,(1),73290,"15,97",1,,Police Cantonale Prés Roses 1,,JU,poc.prevention@jura.ch
+LU,Lucerne,50000,,,,(3),406506,"12,30",1,,Luzerner Polizei Hirschengraben 17a,,LU,info.polizei@lu.ch
+NE,Neuchâtel,24337,,9087,"2,7",(1),177964,"13,68",1,,Police cantonale Neuchâtel Rue des Poudrières 14,avril 2019,NE,police.presse@ne.ch
+NW,Nidwald,,6089,,,(4),42969,"0,00",1,1,Polizeikommando des Kantons Nidwalden,,NW,kantonspolizei@nw.ch
+OW,Obwald,,5325,,,(4),37575,"0,00",1,1,Kantonspolizei Obwalden Postfach 1561,,OW,kapo@ow.ch
+SG,Saint-Gall,55490,,,,(2),504686,"10,99",1,,Kantonspolizei St. Gallen Klosterhof 12,,SG,kommunikation@kapo.sg.ch
+SH,Schaffhouse,14836,,,,(5),81351,"18,24",1,,Schaffhauser Polizei Beckenstube 1,,SH,"info@shpol.ch, patrick.caprez@shpol.ch"
+SZ,Schwytz,,22292,,,(4),157301,"0,00",1,1,Kantonspolizei Schwyz Sicherheitsstützpunkt,,SZ,medien.kapo@sz.ch
+SO,Soleure,32162,,,,(2),271432,"11,85",1,,Polizei Kanton Solothurn Werkhofstrasse 33,fin 2018,SO,medien@kapo.so.ch
+TI,Tessin,63229,,14500,"4,4",(1),353709,"17,88",1,,Polizia Cantonale Via Lugano 4,avril 2019,TI,polizia@polca.ti.ch
+TG,Thurgovie,43458,,,,(1),273801,"15,87",1,,Polizeikommando des Kantons Thurgau,avril 2019,TG,mediendienst@kapo.tg.ch
+UR,Uri,6618,,,,(1),36299,"18,23",1,,Kantonspolizei Uri Werkhof A2/A4,avril 2019,UR,kantonspolizei@ur.ch
+VS,Valais,60000,,,,(3),341463,"17,57",1,,Police cantonale valaisanne Av. de France 69,avril 2019,VS,info.presse@police.vs.ch
+VD,Vaud,143477,,33258,"4,3",(1),793129,"18,09",1,,Police cantonale vaudoise Centre Blécherette,avril 2019,VD,"communication.police@vd.ch, jean-christophe.sauterel@vd.ch"
+ZG,Zoug,,17774,,,(4),125421,"0,00",1,1,Zuger Polizei An der Aa 4,,ZG,info.polizei@zg.ch
+ZH,Zurich,173687,,,,(1),1504346,"11,55",1,,Kantonspolizei Zürich Postfach 8021 Zürich,,ZH,info@kapo.zh.ch
+HPi,,,,,,,,,,,,,,info@pti-mail.ch
+,,Total answers,Total estimations,,,Pop. of cantons which answered,7089738,"14,17",,,,,,
+,,1004708,197603,,,,,,,,,,,
+,,,,,,(1),Etat: avril 2019,,,,,,,
+,,,Total answers + est.,,,(2),Etat: fin 2018,,,,,,,
+,,,1202311,,,(3),Estimation,,,,,,,
+,,,,,,(4),N’a pas transmis de données,,,,,,,
+,,,,,,(5),Y compris armes blanches,,,,,,,
